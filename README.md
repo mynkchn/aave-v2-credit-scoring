@@ -1,4 +1,3 @@
-````markdown
 # Aave V2 Wallet Credit Scoring Project
 
 ## 1. Introduction
@@ -15,7 +14,6 @@ The project is structured into distinct, modular components, ensuring clarity, m
 
 The diagram below illustrates the high-level architecture and data flow within the project:
 
-```mermaid
 graph TD
     A[Raw Aave V2 Transaction Data (user-wallet-transactions.json)] --> B{Data Ingestion};
     B -- Pandas DataFrame --> C{Data Preprocessing & Feature Engineering};
@@ -23,7 +21,6 @@ graph TD
     D -- Scored Wallets DataFrame --> E[Analysis & Reporting];
     E -- Visualizations & Insights --> F[analysis.md];
     D -- Console Output --> G[Top/Bottom Scored Wallets];
-````
 
 ### 2.2. Detailed Processing Flow
 
