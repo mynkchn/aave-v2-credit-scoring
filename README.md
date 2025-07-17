@@ -16,12 +16,13 @@ The diagram below illustrates the high-level architecture and data flow within t
 
 ```mermaid
 graph TD
-    A[Raw Aave V2 Transaction Data (user-wallet-transactions.json)] --> B{Data Ingestion};
-    B -- Pandas DataFrame --> C{Data Preprocessing & Feature Engineering};
-    C -- Engineered Features DataFrame --> D{Wallet Scoring};
-    D -- Scored Wallets DataFrame --> E[Analysis & Reporting];
-    E -- Visualizations & Insights --> F[analysis.md];
-    D -- Console Output --> G[Top/Bottom Scored Wallets];
+    graph TD
+    A[Raw Aave V2 Transaction Data (user-wallet-transactions.json)] --> B{Data Ingestion}
+    B -- Pandas DataFrame --> C{Data Preprocessing & Feature Engineering}
+    C -- Engineered Features DataFrame --> D{Wallet Scoring}
+    D -- Scored Wallets DataFrame --> E[Analysis & Reporting]
+    E -- Visualizations & Insights --> F[analysis.md]
+    D -- Console Output --> G[Top/Bottom Scored Wallets]
 ```
 
 ### 2.2. Detailed Processing Flow
