@@ -14,13 +14,13 @@ The project is structured into distinct, modular components, ensuring clarity, m
 
 The diagram below illustrates the high-level architecture and data flow within the project:
 
+```mermaid
 graph TD
-    A[Raw Aave V2 Transaction Data (user-wallet-transactions.json)] --> B{Data Ingestion};
-    B -- Pandas DataFrame --> C{Data Preprocessing & Feature Engineering};
-    C -- Engineered Features DataFrame --> D{Wallet Scoring};
-    D -- Scored Wallets DataFrame --> E[Analysis & Reporting];
-    E -- Visualizations & Insights --> F[analysis.md];
-    D -- Console Output --> G[Top/Bottom Scored Wallets];
+    A[Raw Aave V2 Transaction Data] --> B{Data Ingestion & Preprocessing};
+    B -- Pandas DataFrame & Feature Engineering --> C{Wallet Scoring};
+    C -- Scored Wallets DataFrame --> D[Analysis & Reporting];
+    D -- Visualizations & Insights --> E[analysis.md & Console Output (Top/Bottom Scored Wallets)];
+```
 
 ### 2.2. Detailed Processing Flow
 
