@@ -138,10 +138,6 @@ print(f"Mean 'has_been_liquidated' for higher scores: {higher_range_wallets['has
 
 ## 4. Relationship Between Score and Key Features
 
-The following scatter plots illustrate the relationship between the calculated wallet score and some of the key engineered features:
-
-![Score vs. Features Scatter Plot](download.png)
-
 **Key Observations from Scatter Plots:**
 
 * **Score vs. Total USD Volume:** As the total USD volume of transactions for a wallet increases, there is a general trend of the score also increasing. This aligns with the intuition that more economically active wallets are likely to be more engaged and potentially more reliable users.
