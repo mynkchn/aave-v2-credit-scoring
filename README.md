@@ -15,7 +15,6 @@ The project is structured into distinct, modular components, ensuring clarity, m
 The diagram below illustrates the high-level architecture and data flow within the project:
 
 ```mermaid
-graph TD
     graph TD
     A[Raw Aave V2 Transaction Data (user-wallet-transactions.json)] --> B{Data Ingestion}
     B -- Pandas DataFrame --> C{Data Preprocessing & Feature Engineering}
